@@ -1,0 +1,492 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+        <title>Confirm Information -  Order process</title>
+        <meta property="og:description" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="static/css/m_menu.css" rel="stylesheet">
+        <link href="static/css/product_views.css" rel="stylesheet">
+        <link href="static/css/style.css" rel="stylesheet">
+                <link rel="canonical" href="">
+    </head>
+    <body class="home">
+        <header class="header fixed" id="pageTop">
+            <div class="top desktop-only" id="top_main_menu">
+                <div class="container-header">
+                    <div class="top_menu_div">
+                        <div class="left logo">
+                            <a href="index.html" title="lostark Online Gamer Store">
+                                <img src="static/picture/lostark-logo.svg" alt="lostark.gold">
+                            </a>
+                        </div>
+                        <div class="right top_right">
+                            <ul class="main_menu">
+                                                                            <li>
+                                                <a href="lost-ark-gold.html" title="Lost Ark Gold">Lost Ark Gold</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="lost-ark-items.html" title="Lost Ark Items">Lost Ark Items</a>
+                                            </li>
+                                                                        </ul>
+            </div>
+            <sidebar id="sidebar" class="mobile-only">
+                <div class="left m_log_div">
+                    <a href="#" class="icon icon--hamburger menu-btn-1 h--left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a href="index.html" title="lostark Online Gamer Store">
+                        <img src="static/picture/lostark-logo.svg" alt="lostark.gold">
+                    </a>
+                </div>
+                <nav id="menu-1" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-1--close h--right menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Main Menu</h3>
+                    <div id="mobile-games-list">
+                        <ul>
+                                                            <li>
+                                    <span onclick="ShowMobileTopSub(this)">Lost Ark</span>
+                                    <a href="javascript:void(0)" onclick="ShowMobileSub(this)" class="sub_link" rel="hide">+</a><ul><li><a href='lost-ark-gold.html' title='Lost Ark Gold'>Lost Ark Gold</a></li><li><a href='lost-ark-items.html' title='Lost Ark Items'>Lost Ark Items</a></li></ul>                                </li>
+                                <li><a href='about-us.html' title='About Us'>About Us</a></li><li><a href='contact-us.html' title='Contact Us'>Contact Us</a></li><li><a href='terms-and-conditions.html' title='Terms and Conditions'>Terms and Conditions</a></li><li><a href='warranty-return.html' title='Warranty & Return'>Warranty & Return</a></li><li><a href='privacy-policy.html' title='Privacy Policy'>Privacy Policy</a></li>                        </ul>
+                    </div>
+                </nav>
+                <!-- Site Overlay -->
+                <div class="site-overlay"></div>
+                <div class="right m_right_c" id="nav">
+                    <div class="right m_top_right">
+                        <div class="marketplace right menu-btn-5--close">
+                            <span>(￥)</span> CNY                        </div>
+                        <div class="top_cart right menu-btn-3--close">
+                            <i class="m_top_icon_cart"></i>
+                            <span id="cart_num_m"><span id="cart_number_m">0</span></span>
+                        </div>
+                        <div class="top_account right menu-btn-4--close">
+                            <i class="m_top_icon_account"></i>
+                        </div>
+                    </div>
+                </div>
+                <nav id="menu-2" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-2--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">lostark MarketPlace</h3>
+                    <div class="mobile_right_content mobile_currency">
+                        <ul>
+                            <li><a href="#" title="">lostark MarketPlace</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav id="menu-3" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-3--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Shoping Cart</h3>
+                    <div class="mobile_right_content" id="m_cart">
+                        <div class='cart_empty' id='m_cart_empty'>Shopping Cart Empty</div>                        <div class="buy_option">
+                            <span id="m_cart_total_price">Total Price : <span class="n_price" id="m_top_cart_total_price">0</span><span class="tag_currency">(CNY)</span></span>
+                            <div class="clear"></div>
+                            <div class="cart_options" id="m_action_cart">
+                                <a href="javascript:;" title="Clear" class="button button_blue">
+                                    Clear                                </a>
+                                <a href="" title="Check Out" class="button">
+                                    Check Out                                </a>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </nav>
+                <nav id="menu-4" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-4--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Account</h3>
+                    <div class="mobile_right_content">
+                                                    <form action="https://lostark.gold/site/login" method="post">
+                                <input type="text" class="menu_input" placeholder="Email..." value="" name="LoginForm[username]">
+                                <input type="password" class="menu_input" placeholder="Password..." value="" name="LoginForm[password]">
+                                <div class="clear"></div>
+                                
+                                <a href="sign.html" class="button button_col">Register</a>
+                            </form>
+                            <div class="login-buttom-link">
+                                <a href="forgetPassword.html" rel="nofollow">Forgot Password?</a>
+                            </div>
+                                                </div>
+                </nav>
+                <nav id="menu-5" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-5--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Currency Change</h3>
+                    <div class="mobile_right_content mobile_currency">
+                        <ul>
+                            <li><a code_value='EUR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(€)</span><span class='c_right'> EUR</span></a></li><li><a code_value='USD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> USD</span></a></li><li><a code_value='GBP' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(£)</span><span class='c_right'> GBP</span></a></li><li><a code_value='CAD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> CAD</span></a></li><li><a code_value='AUD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> AUD</span></a></li><li><a code_value='SEK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> SEK</span></a></li><li><a code_value='NOK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> NOK</span></a></li><li><a code_value='DKK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> DKK</span></a></li><li><a code_value='JPY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(￥)</span><span class='c_right'> JPY</span></a></li><li><a code_value='RUB' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(pуб)</span><span class='c_right'> RUB</span></a></li><li><a code_value='NZD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(NZ$)</span><span class='c_right'> NZD</span></a></li><li><a class='active' code_value='CNY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(￥)</span><span class='c_right'> CNY</span></a></li><li><a code_value='KRW' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₩)</span><span class='c_right'> KRW</span></a></li><li><a code_value='CZK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> CZK</span></a></li><li><a code_value='HUF' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(Ft)</span><span class='c_right'> HUF</span></a></li><li><a code_value='TRY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₺)</span><span class='c_right'> TRY</span></a></li><li><a code_value='PLN' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(zł)</span><span class='c_right'> PLN</span></a></li><li><a code_value='IDR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(Rp)</span><span class='c_right'> IDR</span></a></li><li><a code_value='PHP' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₱)</span><span class='c_right'> PHP</span></a></li><li><a code_value='THB' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(฿)</span><span class='c_right'> THB</span></a></li><li><a code_value='HKD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(HK$)</span><span class='c_right'> HKD</span></a></li><li><a code_value='TWD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(NT$)</span><span class='c_right'> TWD</span></a></li><li><a code_value='MYR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(RM)</span><span class='c_right'> MYR</span></a></li>                        </ul>
+                    </div>
+                </nav>
+                <div class="clear"></div>
+            </sidebar>
+            <div class="clear"></div>
+        </header>
+        <link href="static/css/search_box.css" rel="stylesheet">
+<style>
+     #card{
+        margin: 10px 0px;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    #air_box{
+        display: none;
+        margin-top: 20px;
+    }
+    #air_box span{
+        margin-top: 10px;
+    }
+    #air_box span.air_name{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #air_box span.ar_price{
+        font-size: 18px;
+        font-weight: bold;
+        color: #ff541a;
+    }
+    #air_box span.ar_currency{
+         color: #ff541a;
+    }
+    .active #air_box{
+        display: block;
+    }
+    #air_error{color: red;margin-top: 10px;}
+    #air_box #card{background:#FFF}
+    #submit.btn{
+        padding: 0px 20px;
+        width: auto;
+        margin-top: 0px;
+        height: 32px;
+        font-size: 16px;
+    }
+    .pay-type dt{
+        position: relative;
+        padding: 10px;
+    }
+    .pay-type input[type="radio"]{
+        position: absolute;
+        right: 10px;
+        top: 0px;
+    }
+    .pay-type label{padding-left: 0px;width: 100%;}
+    .imgss{text-align: center;margin: 20px auto;}
+    .pay_page .card__content{padding: 20px;}
+</style>
+<script src="static/js/bundle.0.2.40.min.js"></script>
+<div class="container cart_pages">
+    <div class="page_content_kid cart_page">
+        <form id="cart_from" class="card-container" action="https://lostark.gold/order/addCookieOrder" onsubmit="return checkForm()" method="post">
+            <section class="card_cart_l card_fix" id="pay_top">
+                <div class="cart__content">
+                    <h4 class="card__title cart"><b>Step 1 :</b> Delivery Information</h4>
+                                    </div>
+                <div class="cart__content">
+                    <h4 class="card__title cart"><b>Step 2 :</b> Personal Information</h4>
+                    <div class="cart_product cart_ues">
+                        <input type="hidden" value="" name="Customer[coupon]" id="v_coupon" size="29">
+<ul class="shopping-info">
+    <li>
+        <label for="f_name">First Name<font color="red">*</font>: </label>                       
+        <div class="input-box">
+            <input type="text" class="flowfVerify bt_tips" rel-verify="required" title="First name must be enter." value="" name="Customer[first_name]" id="first_name">
+        </div>
+        <div class="clear"></div>
+    </li>
+    <li>
+        <label for="l_name">Last Name <font color="red">*</font>: </label>                       
+        <div class="input-box">
+            <input type="text" class="flowfVerify bt_tips" rel-verify="required" title="Last name must be enter." value="" name="Customer[last_name]" id="last_name">
+        </div>
+        <div class="clear"></div>
+    </li>
+    <li>
+        <label for="email">Email Address <font color="red">*</font>: </label>                       
+        <div class="input-box">
+            <input type="text" value="" class="flowfVerify bt_tips" rel-verify="required" title="Email Address must be enter." name="Customer[email]" id="mail">
+        </div>
+        <div class="clear"></div>
+    </li>
+    <li>
+        <label for="tel">Contact Phone <font color="red">*</font>: </label>                    
+        <div class="input-box">
+            <input type="text" class="flowfVerify bt_tips" rel-verify="required" title="Contact Phone must be enter." name="Customer[phone]" id="phone" value="">
+        </div>
+        <div class="clear"></div>
+    </li>
+    <li>
+        <label for="comment">Comments: </label>
+        <div style="width: 98%">
+            <textarea cols="41" rows="8" name="Customer[comment]" id="comment"></textarea>
+        </div>
+        <div class="clear"></div>
+    </li>
+</ul>
+<div class="clear"></div>
+<div class="createaccout">
+    <input type="checkbox" id="is_account" name="is_account" value="Y" onclick="showPassWord(this)" style="height:auto">
+    <b id="register_say">Create account for your Email!</b>
+</div>
+<div id="create-account" style="margin-top:10px;visibility:hidden">
+    <label for="passwd1">Password <font color="red">*</font>: </label>
+    <input type="password" id="passwd1" name="passwd1" style="width:120px" value="" autocomplete="off" rel-verify="required" title="Password must be enter." class="bt_tips">
+    <label for="passwd2">Confirm <font color="red">*</font>: </label>
+    <input type="password" id="passwd2" name="passwd2" style="width:120px" value="" autocomplete="off" rel-verify="required" title="Confirm Password must be enter." class="bt_tips">
+    <div class="clear"></div>
+</div>
+<div class="clear"></div>                        <div id="tag_area" class="loading_more">
+                            <a href="#pay_top" style="border:0px;">Select Payment Method »</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card_fix card_cart_r">
+                <div class="cart__content">
+                    <h4 class="card__title cart"><b>Step 3 :</b> Payment</h4>
+                    <div class="cart_product">
+                                <dl class="pay-type" id="payment_mothed">
+                                    <div class="cart-payment">
+                                        Select your payment method (*)
+                                    </div>
+                                                                            <dt class="active">
+                                            <input class="payment-type" value="free" id="free" type="radio" name="payment" checked="true">
+                                            <label for="paypal">
+                                                Free Product
+                                                <br><span>U4GM Free Service, Not Need Pay!</span>
+                                            </label>
+                                            <div class="clear"></div>
+                                        </dt>
+                                        <div class="clear"></div>
+                                        <div class="payment-go">
+                                            <input class="btn btn-primary left pay_now" type="submit" value="Sumbit Order »">
+                                            <div style="font-size: 13px;padding: 10px;">
+                                                Please <a href="javascript:;">Clear up Shopping cart</a> if your payment is failed and then try to pay again.
+                                            </div>
+                                        </div>
+                                                                    </dl></div>
+                </div>
+            </section>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="static/js/jquery_min.js"></script>
+<script>
+    // STEP #2: Initialize the Airwallex global context for event communication
+    var m_error = new Map([['05', 'Do not Honor'], ['07', 'Pick up Card'], ['59', 'Suspected fraud'], ['14', 'Invalid Card Number'],['51','Insufficient Funds']]);
+    Airwallex.init({
+        env: 'prod', // Setup which Airwallex env('staging' | 'demo' | 'prod') to integrate with
+        origin: window.location.origin, // Setup your event target to receive the browser events message
+    });
+    // STEP #4: Create 'card' element
+    const card = Airwallex.createElement('card');
+    // STEP #5: Mount card element
+    card.mount('card');
+    // STEP #6a: Add a button handler to trigger the payment request
+    document.getElementById('submit').addEventListener('click', () => {
+        s_type = checkForm('air');
+        if (s_type){
+            document.getElementById('submit').innerHTML = "Loading...";
+            getAirCreatLink()
+        }else{
+            alert('Input Right Order Information, Please!!');
+        }
+    });
+    function getAirCreatLink() {
+        var params = $("#cart_from").serialize();
+        var do_url = "/order/airPayment";
+        $.post(do_url,params, function (data) {
+            if (data) {
+                getAirData();
+            }
+        });
+    }
+    function getAirData(){
+        var coupon = $("#coupon").val();
+        var get_url = '/order/getAirCode';
+        var j_id = $("#Airwallex_id").val();
+        var j_secret = $("#Airwallex_secret").val();
+        var coupon = $("#coupon").val();
+        if(j_id!='0'&&j_secret!='0'&&coupon==''){
+            setAirWall(j_id,j_secret);
+        }else{
+            $.getJSON(get_url, { 'coupon': coupon}, function(json){
+               if(json.id){
+                    setAirWall(json.id,json.secret);
+                    $("#Airwallex_id").val(json.id);
+                    $("#Airwallex_secret").val(json.secret);
+               }else{
+                   document.getElementById('air_error').innerHTML = ('Error: Can Not Create Secret!!!');
+                   document.getElementById('submit').innerHTML = "Pay Now »";
+               }
+           });
+        }
+    }
+    function setAirWall(id,secret){
+        Airwallex.confirmPaymentIntent({
+               element: card,
+               id: id,
+               client_secret: secret,
+           }).then((response) => {
+           // STEP #6b: Listen to the request response
+           /* handle confirm response*/
+              //console.log(response)
+              document.getElementById('submit').innerHTML = "Pay Now »";
+              if(response.status=='SUCCEEDED'){
+                  window.location.href = "https://lostark.gold/order/access";
+              }else{
+                  window.location.href = "https://lostark.gold/order/failed";
+              }
+               //data = JSON.stringify(response);
+               //window.alert(JSON.stringify(response));
+           }).catch((response) => {
+           // STEP #6c: Listen to the error response
+           /* handle error response*/
+           var e_message = "Issuer Declined";
+            if(response.message){
+                e_message = response.message
+            }else{
+                if(response.error.original_code){
+                      n_error = m_error.get(response.error.original_code);
+                      if(n_error){
+                          e_message = n_error
+                      }
+                }
+            }
+            var html_error = "Error: " + e_message
+            document.getElementById('air_error').innerHTML = (html_error);
+            console.log('There was an error', response);
+            document.getElementById('submit').innerHTML = "Pay Now »";
+           });
+    }
+    // STEP #7: Add an event listener to ensure the element is mounted
+    window.addEventListener('onReady', (event) => {
+    /*
+     ... Handle event
+     */
+    //console.log(event.detail)
+            //window.alert(event.detail);
+    });
+</script>        <footer>
+            <div class="container">
+                <div class="card-container">
+                    <div class="left_safe card_fix">
+                        <ul class="left_safe_img">
+                            <li>
+                                <a href="javascript:;" title="Google Transparency Report lostark.gold" rel="nofollow">
+                                    <img src="static/picture/google_sale.png" alt="Google Transparency Report lostark.gold">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="McAfee SECURE certification lostark.gold" rel="nofollow">
+                                    <img src="static/picture/mcafee_safe.png" alt="McAfee SECURE certification lostark.gold">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footerList">
+                                                            <li>
+                                    <a href="privacy-policy.html" title="Privacy Policy">
+                                        Privacy Policy                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="terms-and-conditions.html" title="Terms and Conditions">
+                                        Terms and Conditions                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="warranty-return.html" title="Warranty & Return">
+                                        Warranty & Return                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="contact-us.html" title="Contact Us">
+                                        Contact Us                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="about-us.html" title="About Us">
+                                        About Us                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="center_pay card_fix">
+                        <div class="pay_div"><img src="static/picture/pay_buttom_ark.png" alt="futcoins pay method"></div>
+                    </div>
+                    <div class="right_sns card_fix">
+                        <div class="hdLinks">
+                            <a href="#" target="_blank">
+                                <img src="static/picture/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/google.png" alt="google">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/youtube.png" alt="youtube">
+                            </a>
+                        </div>
+                        <div class="poe2trade_txt">
+                            LostArkGold is the Best way to buy First-Hand Lost Ark gold and items. We offer instant delivery, 24/7 customer service, trustworthy sellers, and 100% Trading Protection.                         </div>
+                    </div>
+                </div>
+                <div class="footer_links_div">
+                    <div class="container">
+                        <ul class="footerList">
+                                                            <li>
+                                    <a href="index.html" rel="" title="Lost Ark Gold" target="">
+                                        Lost Ark Gold                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="index.html" rel="" title="Buy Lost Ark Gold" target="">
+                                        Buy Lost Ark Gold                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="javascript:;" rel="" title="Lost Ark Website" target="">
+                                        Lost Ark Website                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="javascript:;" rel="nofollow" title="Lost Ark Steam" target="">
+                                        Lost Ark Steam                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Possible account termination when using illegal leveling or illegally obtained gold.<br>
+                Copyright © 2009-2022                                <a href="index.html" title="lostark.gold" rel="nofollow">King COOLPLAY TECHNOLOGY CO., LIMITED)</a>.All rights reserved.
+                <a href="javascript:;" title="Sitemap">Sitemap</a>
+            </div>
+        </footer>
+        <section id="top_go" class="top_class">
+
+            <a href="#pageTop" id="goPageTop" title="go page top" rel="nofollow">
+                <img src="static/picture/go-top-page.svg" alt="go page 
+                     top">
+            </a>
+        </section>
+    </body>
+        <script type="text/javascript" src="static/js/img_lazyload.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.bt.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.mobile.menu.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+    <div style="display:none">
+                    </div>
+</html>

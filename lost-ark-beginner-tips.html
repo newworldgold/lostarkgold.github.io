@@ -1,0 +1,342 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+        <title>Lost Ark Beginner Tips - lostark.gold</title>
+        <meta property="og:description" content="Here are some simple and quickfire tips to get you off to a good start.">
+        <meta name="description" content="Here are some simple and quickfire tips to get you off to a good start.">
+        <meta name="keywords" content="lost ark tips">
+        <link href="static/css/m_menu.css" rel="stylesheet">
+        <link href="static/css/product_views.css" rel="stylesheet">
+        <link href="static/css/style.css" rel="stylesheet">
+                <link rel="canonical" href="">
+    </head>
+    <body class="home">
+        <header class="header fixed" id="pageTop">
+            <div class="top desktop-only" id="top_main_menu">
+                <div class="container-header">
+                    <div class="top_menu_div">
+                        <div class="left logo">
+                            <a href="index.html" title="lostark Online Gamer Store">
+                                <img src="static/picture/lostark-logo.svg" alt="lostark.gold">
+                            </a>
+                        </div>
+                        <div class="right top_right">
+                            <ul class="main_menu">
+                                                                            <li>
+                                                <a href="lost-ark-gold.html" title="Lost Ark Gold">Lost Ark Gold</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="lost-ark-items.html" title="Lost Ark Items">Lost Ark Items</a>
+                                            </li>
+                              </ul>                       
+                </div>
+                <div class="clear"></div>
+            </div>
+            <sidebar id="sidebar" class="mobile-only">
+                <div class="left m_log_div">
+                    <a href="#" class="icon icon--hamburger menu-btn-1 h--left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a href="index.html" title="lostark Online Gamer Store">
+                        <img src="static/picture/lostark-logo.svg" alt="lostark.gold">
+                    </a>
+                </div>
+                <nav id="menu-1" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-1--close h--right menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Main Menu</h3>
+                    <div id="mobile-games-list">
+                        <ul>
+                                                            <li>
+                                    <span onclick="ShowMobileTopSub(this)">Lost Ark</span>
+                                    <a href="javascript:void(0)" onclick="ShowMobileSub(this)" class="sub_link" rel="hide">+</a><ul><li><a href='lost-ark-gold.html' title='Lost Ark Gold'>Lost Ark Gold</a></li><li><a href='lost-ark-items.html' title='Lost Ark Items'>Lost Ark Items</a></li></ul>                                </li>
+                                <li><a href='about-us.html' title='About Us'>About Us</a></li><li><a href='contact-us.html' title='Contact Us'>Contact Us</a></li><li><a href='terms-and-conditions.html' title='Terms and Conditions'>Terms and Conditions</a></li><li><a href='warranty-return.html' title='Warranty & Return'>Warranty & Return</a></li><li><a href='privacy-policy.html' title='Privacy Policy'>Privacy Policy</a></li>                        </ul>
+                    </div>
+                </nav>
+                <!-- Site Overlay -->
+                <div class="site-overlay"></div>
+                <div class="right m_right_c" id="nav">
+                    <div class="right m_top_right">
+                        <div class="marketplace right menu-btn-5--close">
+                            <span>(￥)</span> CNY                        </div>
+                        <div class="top_cart right menu-btn-3--close">
+                            <i class="m_top_icon_cart"></i>
+                            <span id="cart_num_m"><span id="cart_number_m">0</span></span>
+                        </div>
+                        <div class="top_account right menu-btn-4--close">
+                            <i class="m_top_icon_account"></i>
+                        </div>
+                    </div>
+                </div>
+                <nav id="menu-2" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-2--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">lostark MarketPlace</h3>
+                    <div class="mobile_right_content mobile_currency">
+                        <ul>
+                            <li><a href="#" title="">lostark MarketPlace</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav id="menu-3" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-3--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Shoping Cart</h3>
+                    <div class="mobile_right_content" id="m_cart">
+                        <div class='cart_empty' id='m_cart_empty'>Shopping Cart Empty</div>                        <div class="buy_option">
+                            <span id="m_cart_total_price">Total Price : <span class="n_price" id="m_top_cart_total_price">0</span><span class="tag_currency">(CNY)</span></span>
+                            <div class="clear"></div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </nav>
+                <nav id="menu-4" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-4--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Account</h3>
+                    <div class="mobile_right_content">
+                                                    <form action="https://lostark.gold/site/login" method="post">
+                                <input type="text" class="menu_input" placeholder="Email..." value="" name="LoginForm[username]">
+                                <input type="password" class="menu_input" placeholder="Password..." value="" name="LoginForm[password]">
+                                <div class="clear"></div>
+                                
+                                <a href="sign.html" class="button button_col">Register</a>
+                            </form>
+                            <div class="login-buttom-link">
+                                <a href="forgetPassword.html" rel="nofollow">Forgot Password?</a>
+                            </div>
+                                                </div>
+                </nav>
+                <nav id="menu-5" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-5--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Currency Change</h3>
+                    <div class="mobile_right_content mobile_currency">
+                        <ul>
+                            <li><a code_value='EUR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(€)</span><span class='c_right'> EUR</span></a></li><li><a code_value='USD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> USD</span></a></li><li><a code_value='GBP' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(£)</span><span class='c_right'> GBP</span></a></li><li><a code_value='CAD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> CAD</span></a></li><li><a code_value='AUD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> AUD</span></a></li><li><a code_value='SEK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> SEK</span></a></li><li><a code_value='NOK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> NOK</span></a></li><li><a code_value='DKK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> DKK</span></a></li><li><a code_value='JPY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(￥)</span><span class='c_right'> JPY</span></a></li><li><a code_value='RUB' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(pуб)</span><span class='c_right'> RUB</span></a></li><li><a code_value='NZD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(NZ$)</span><span class='c_right'> NZD</span></a></li><li><a class='active' code_value='CNY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(￥)</span><span class='c_right'> CNY</span></a></li><li><a code_value='KRW' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₩)</span><span class='c_right'> KRW</span></a></li><li><a code_value='CZK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> CZK</span></a></li><li><a code_value='HUF' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(Ft)</span><span class='c_right'> HUF</span></a></li><li><a code_value='TRY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₺)</span><span class='c_right'> TRY</span></a></li><li><a code_value='PLN' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(zł)</span><span class='c_right'> PLN</span></a></li><li><a code_value='IDR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(Rp)</span><span class='c_right'> IDR</span></a></li><li><a code_value='PHP' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₱)</span><span class='c_right'> PHP</span></a></li><li><a code_value='THB' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(฿)</span><span class='c_right'> THB</span></a></li><li><a code_value='HKD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(HK$)</span><span class='c_right'> HKD</span></a></li><li><a code_value='TWD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(NT$)</span><span class='c_right'> TWD</span></a></li><li><a code_value='MYR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(RM)</span><span class='c_right'> MYR</span></a></li>                        </ul>
+                    </div>
+                </nav>
+                <div class="clear"></div>
+            </sidebar>
+            <div class="clear"></div>
+        </header>
+        <section class="body_main">
+    <div class="container_breadcrumb ">
+        <ol class="breadcrumb container">
+            <ul class='breadcrumb'><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.html"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="news.html"><span itemprop="title">News And Guides</span></a></li></ul>        </ol>
+    </div>
+    <section class="container body_c_main">
+        <section class="body_content">
+            <section class="page-body-all">
+    <div class="container_2_2">
+        <div class="news-content">
+            <h1 class="news-title">Lost Ark Beginner Tips</h1>
+            <div class="editordoc">
+                <span class="doc-user">Lost Ark</span>
+                <span class="doc-date">Date: Jan/27/22 09:32:40</span>
+                <span class="doc-views">Views: 99</span>
+                <div class="clear"></div>
+            </div>
+            <p>
+	<span style="font-family:times new roman, times, serif;">Lost Ark is a staggeringly complex game, so it&#39;s difficult for new players to get started. Here are some simple and quickfire tips to get you off to a good start.</span></p>
+<p>
+	&nbsp;</p>
+<p>
+	<span style="font-family:times new roman, times, serif;"><img src='static/picture/54712aab386eec092edddf2f49e9b395.jpg' alt='Lost Ark Beginner Tips'><br>
+	<br>
+	1. The max character level in Lost Ark is level 50. You can level up several alt characters while working toward your account level.<br>
+	<br>
+	2. In the NA/EU version of the game, you start at level 10 with some skills already unlocked. Don&#39;t be confused. This is just the way it is.<br>
+	<br>
+	3. Simple tips for gear while you level: upgrade gear with a blue &quot;arrow&quot; on it, always redeem your Adventure items (yellow arrow), and focus on the main quest if you want to maximize your time to reward.<br>
+	<br>
+	4. There is a fast travel system in Lost Ark called &quot;Tripods,&quot; these cost a small amount of silver that can be used to travel between set locations on the same continent. You can fast travel from anywhere at any time.<br>
+	<br>
+	5. You unlock your mount through the main story early on, and you should be using it almost all the time from then. Mounting up is an instant process in Lost Ark, and mounts give a vast movement speed boost. It&#39;s easy to forget, especially if going a short distance, but almost always worth it to mount up.<br>
+	<br>
+	6. You can get a free pet by completing a quest in the first main hub town. Make sure to complete this quest. Pets help collect loot, primarily, although high-level pets will also provide small buffs.<br>
+	<br>
+	7. Speaking of moving around &ndash; don&#39;t forget about Lost Ark&#39;s fast travel points. They&#39;re displayed as triangles within a circle on the minimap and are vital for quickly traveling long distances. You need to remember to use them whenever you need to go far for a quest and click on them in every new area to unlock them. It&#39;s a terrible feeling to want to go back somewhere but then realize you forgot to open the fast travel point.<br>
+	<br>
+	8. You can reset skills at any time for absolutely no cost, which makes it easier to experiment with different builds.<br>
+	<br>
+	9. When you first start leveling up, you may be a bit overwhelmed by the skill system. There are many skills, and at every level, you gain more and more points to unlock more and more things. Don&#39;t worry, and it is a bit complicated! To make things quick and easy, you should focus on leveling just one or two skills. Generally, these should be skills with AoE damage, which will allow you to easily plow through hordes of monsters while you progress through the story.<br>
+	<br>
+	10. If you&#39;re unsure which skills to level or how you want to play your character, you can always test things out in the training ground. The training ground allows you to spend your points anywhere you&#39;d like, giving you the option to test out any combination of skills. It&#39;s an excellent tool for testing your class, and you should make sure to take advantage of it.<br>
+	<br>
+	11. Throughout the main story, you&#39;ll be rewarded with hundreds of potions. Make sure to use them, whether it be to stay alive or maximize your damage. That&#39;s what they&#39;re there for, and especially with health potions, it&#39;s better to use on than to die and have to start things over again.<br>
+	<br>
+	12. The fastest and most efficient way to level up and hit the end game is to follow the main story. It gives a ton of experience good rewards and will get you quickly where you want to go. You will miss out on things like the free pet, extra life skill items, other <a href="index.html"><strong>Lost Ark items</strong></a>, and some songs, but if you want to get to the end game ASAP, the main story is the way to go. You can always come back and unlock the things you missed later.<br>
+	<br>
+	Now that you&#39;ve read these tips, you&#39;re set and ready to succeed in Lost Ark. For more Lost Ark content like this, check out the news page of <a href="index.html">lostark.gold</a>.<br>
+	</span></p>
+        </div>
+        <div class="shart_b">
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="javascript:;"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_google_plus"></a>
+                <a class="a2a_button_pinterest"></a>
+            </div>
+            <script async="" src="static/js/page.js"></script>
+            <!-- AddToAny END -->
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!--<section class="page-body-have">
+    <div class="page_title">
+        <span></span>
+    </div>
+    <div class="container">
+        <div class="card-container">
+            <div id="disqus_thread" style="width: 100%;"></div>
+            <script>
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://u4gm.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+</section>-->
+<section class="page-body-have">
+    <div class="page_title">
+        <span>lost ark tips Related News And Guides </span>
+    </div>
+    <div class="card-container">
+            </div>
+</section>            <section id="top_go" class="top_class">
+                <a href="#pageTop" id="goPageTop"></a>
+            </section>
+        </section>
+        <div class="clear"></div>
+    </section>
+</section>
+        <footer>
+            <div class="container">
+                <div class="card-container">
+                    <div class="left_safe card_fix">
+                        <ul class="left_safe_img">
+                            <li>
+                                <a href="javascript:;" title="Google Transparency Report lostark.gold" rel="nofollow">
+                                    <img src="static/picture/google_sale.png" alt="Google Transparency Report lostark.gold">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="McAfee SECURE certification lostark.gold" rel="nofollow">
+                                    <img src="static/picture/mcafee_safe.png" alt="McAfee SECURE certification lostark.gold">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footerList">
+                                                            <li>
+                                    <a href="privacy-policy.html" title="Privacy Policy">
+                                        Privacy Policy                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="terms-and-conditions.html" title="Terms and Conditions">
+                                        Terms and Conditions                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="warranty-return.html" title="Warranty & Return">
+                                        Warranty & Return                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="contact-us.html" title="Contact Us">
+                                        Contact Us                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="about-us.html" title="About Us">
+                                        About Us                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="center_pay card_fix">
+                        <div class="pay_div"><img src="static/picture/pay_buttom_ark.png" alt="futcoins pay method"></div>
+                    </div>
+                    <div class="right_sns card_fix">
+                        <div class="hdLinks">
+                            <a href="#" target="_blank">
+                                <img src="static/picture/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/google.png" alt="google">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/youtube.png" alt="youtube">
+                            </a>
+                        </div>
+                        <div class="poe2trade_txt">
+                            LostArkGold is the Best way to buy First-Hand Lost Ark gold and items. We offer instant delivery, 24/7 customer service, trustworthy sellers, and 100% Trading Protection.                         </div>
+                    </div>
+                </div>
+                <div class="footer_links_div">
+                    <div class="container">
+                        <ul class="footerList">
+                                                            <li>
+                                    <a href="index.html" rel="" title="Lost Ark Gold" target="">
+                                        Lost Ark Gold                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="index.html" rel="" title="Buy Lost Ark Gold" target="">
+                                        Buy Lost Ark Gold                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="javascript:;" rel="" title="Lost Ark Website" target="">
+                                        Lost Ark Website                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="javascript:;" rel="nofollow" title="Lost Ark Steam" target="">
+                                        Lost Ark Steam                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Possible account termination when using illegal leveling or illegally obtained gold.<br>
+                Copyright © 2009-2022                                <a href="index.html" title="lostark.gold" rel="nofollow">King COOLPLAY TECHNOLOGY CO., LIMITED)</a>.All rights reserved.
+                <a href="javascript:;" title="Sitemap">Sitemap</a>
+            </div>
+        </footer>
+        <section id="top_go" class="top_class">
+
+            <a href="#pageTop" id="goPageTop" title="go page top" rel="nofollow">
+                <img src="static/picture/go-top-page.svg" alt="go page 
+                     top">
+            </a>
+        </section>
+    </body>
+            <script type="text/javascript" src="static/js/jquery_min.js"></script>
+            <script type="text/javascript" src="static/js/img_lazyload.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.bt.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.mobile.menu.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+    <div style="display:none">
+                    </div>
+</html>

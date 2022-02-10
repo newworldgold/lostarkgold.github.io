@@ -1,0 +1,362 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+        <title>How to Change Your Mouse Controls in Lost Ark? - lostark.gold</title>
+        <meta property="og:description" content="Here's how to change your mouse controls in Lost Ark.">
+        <meta name="description" content="Here's how to change your mouse controls in Lost Ark.">
+        <meta name="keywords" content="lost ark change mouse controls">
+        <link href="static/css/m_menu.css" rel="stylesheet">
+        <link href="static/css/product_views.css" rel="stylesheet">
+        <link href="static/css/style.css" rel="stylesheet">
+                <link rel="canonical" href="">
+    </head>
+    <body class="home">
+        <header class="header fixed" id="pageTop">
+            <div class="top desktop-only" id="top_main_menu">
+                <div class="container-header">
+                    <div class="top_menu_div">
+                        <div class="left logo">
+                            <a href="index.html" title="lostark Online Gamer Store">
+                                <img src="static/picture/lostark-logo.svg" alt="lostark.gold">
+                            </a>
+                        </div>
+                        <div class="right top_right">
+                            <ul class="main_menu">
+                                                                            <li>
+                                                <a href="lost-ark-gold.html" title="Lost Ark Gold">Lost Ark Gold</a>
+                                            </li>
+                                                                                        <li>
+                                                <a href="lost-ark-items.html" title="Lost Ark Items">Lost Ark Items</a>
+                                            </li>
+                            </ul>                         
+                </div>
+                <div class="clear"></div>
+            </div>
+            <sidebar id="sidebar" class="mobile-only">
+                <div class="left m_log_div">
+                    <a href="#" class="icon icon--hamburger menu-btn-1 h--left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a href="index.html" title="lostark Online Gamer Store">
+                        <img src="static/picture/lostark-logo.svg" alt="lostark.gold">
+                    </a>
+                </div>
+                <nav id="menu-1" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-1--close h--right menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Main Menu</h3>
+                    <div id="mobile-games-list">
+                        <ul>
+                                                            <li>
+                                    <span onclick="ShowMobileTopSub(this)">Lost Ark</span>
+                                    <a href="javascript:void(0)" onclick="ShowMobileSub(this)" class="sub_link" rel="hide">+</a><ul><li><a href='lost-ark-gold.html' title='Lost Ark Gold'>Lost Ark Gold</a></li><li><a href='lost-ark-items.html' title='Lost Ark Items'>Lost Ark Items</a></li></ul>                                </li>
+                                <li><a href='about-us.html' title='About Us'>About Us</a></li><li><a href='contact-us.html' title='Contact Us'>Contact Us</a></li><li><a href='terms-and-conditions.html' title='Terms and Conditions'>Terms and Conditions</a></li><li><a href='warranty-return.html' title='Warranty & Return'>Warranty & Return</a></li><li><a href='privacy-policy.html' title='Privacy Policy'>Privacy Policy</a></li>                        </ul>
+                    </div>
+                </nav>
+                <!-- Site Overlay -->
+                <div class="site-overlay"></div>
+                <div class="right m_right_c" id="nav">
+                    <div class="right m_top_right">
+                        <div class="marketplace right menu-btn-5--close">
+                            <span>(￥)</span> CNY                        </div>
+                        <div class="top_cart right menu-btn-3--close">
+                            <i class="m_top_icon_cart"></i>
+                            <span id="cart_num_m"><span id="cart_number_m">0</span></span>
+                        </div>
+                        <div class="top_account right menu-btn-4--close">
+                            <i class="m_top_icon_account"></i>
+                        </div>
+                    </div>
+                </div>
+                <nav id="menu-2" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-2--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">lostark MarketPlace</h3>
+                    <div class="mobile_right_content mobile_currency">
+                        <ul>
+                            <li><a href="#" title="">lostark MarketPlace</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav id="menu-3" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-3--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Shoping Cart</h3>
+                    <div class="mobile_right_content" id="m_cart">
+                        <div class='cart_empty' id='m_cart_empty'>Shopping Cart Empty</div>                        <div class="buy_option">
+                            <span id="m_cart_total_price">Total Price : <span class="n_price" id="m_top_cart_total_price">0</span><span class="tag_currency">(CNY)</span></span>
+                            <div class="clear"></div>
+
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </nav>
+                <nav id="menu-4" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-4--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Account</h3>
+                    <div class="mobile_right_content">
+                                                    <form action="https://lostark.gold/site/login" method="post">
+                                <input type="text" class="menu_input" placeholder="Email..." value="" name="LoginForm[username]">
+                                <input type="password" class="menu_input" placeholder="Password..." value="" name="LoginForm[password]">
+                                <div class="clear"></div>
+                                
+                                <a href="sign.html" class="button button_col">Register</a>
+                            </form>
+                            <div class="login-buttom-link">
+                                <a href="forgetPassword.html" rel="nofollow">Forgot Password?</a>
+                            </div>
+                                                </div>
+                </nav>
+                <nav id="menu-5" class="offside mobile_menu">
+                    <a href="#" class="icon icon--cross menu-btn-5--close h--left menu-close">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <h3 class="mobile-games">Currency Change</h3>
+                    <div class="mobile_right_content mobile_currency">
+                        <ul>
+                            <li><a code_value='EUR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(€)</span><span class='c_right'> EUR</span></a></li><li><a code_value='USD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> USD</span></a></li><li><a code_value='GBP' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(£)</span><span class='c_right'> GBP</span></a></li><li><a code_value='CAD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> CAD</span></a></li><li><a code_value='AUD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>($)</span><span class='c_right'> AUD</span></a></li><li><a code_value='SEK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> SEK</span></a></li><li><a code_value='NOK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> NOK</span></a></li><li><a code_value='DKK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> DKK</span></a></li><li><a code_value='JPY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(￥)</span><span class='c_right'> JPY</span></a></li><li><a code_value='RUB' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(pуб)</span><span class='c_right'> RUB</span></a></li><li><a code_value='NZD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(NZ$)</span><span class='c_right'> NZD</span></a></li><li><a class='active' code_value='CNY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(￥)</span><span class='c_right'> CNY</span></a></li><li><a code_value='KRW' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₩)</span><span class='c_right'> KRW</span></a></li><li><a code_value='CZK' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(kr)</span><span class='c_right'> CZK</span></a></li><li><a code_value='HUF' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(Ft)</span><span class='c_right'> HUF</span></a></li><li><a code_value='TRY' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₺)</span><span class='c_right'> TRY</span></a></li><li><a code_value='PLN' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(zł)</span><span class='c_right'> PLN</span></a></li><li><a code_value='IDR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(Rp)</span><span class='c_right'> IDR</span></a></li><li><a code_value='PHP' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(₱)</span><span class='c_right'> PHP</span></a></li><li><a code_value='THB' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(฿)</span><span class='c_right'> THB</span></a></li><li><a code_value='HKD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(HK$)</span><span class='c_right'> HKD</span></a></li><li><a code_value='TWD' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(NT$)</span><span class='c_right'> TWD</span></a></li><li><a code_value='MYR' href='javascript:void(0)' onclick='setCurrecy(this)' rel='nofollow'><span class='c_left'>(RM)</span><span class='c_right'> MYR</span></a></li>                        </ul>
+                    </div>
+                </nav>
+                <div class="clear"></div>
+            </sidebar>
+            <div class="clear"></div>
+        </header>
+        <section class="body_main">
+    <div class="container_breadcrumb ">
+        <ol class="breadcrumb container">
+            <ul class='breadcrumb'><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="index.html"><span itemprop="title">Home</span></a></li><li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="news.html"><span itemprop="title">News And Guides</span></a></li></ul>        </ol>
+    </div>
+    <section class="container body_c_main">
+        <section class="body_content">
+            <section class="page-body-all">
+    <div class="container_2_2">
+        <div class="news-content">
+            <h1 class="news-title">How to Change Your Mouse Controls in Lost Ark?</h1>
+            <div class="editordoc">
+                <span class="doc-user">Lost Ark</span>
+                <span class="doc-date">Date: Jan/24/22 09:34:15</span>
+                <span class="doc-views">Views: 404</span>
+                <div class="clear"></div>
+            </div>
+            <p>
+	<span style="font-family:times new roman, times, serif;">In Lost Ark, we have a series of guides to help you improve your game experiences, such as how to get <a href="index.html"><strong>Lost Ark Gold</strong></a>, Shillings, Pets, Cards, etc. Today, we&#39;re bringing a new guide on changing mouse controls.<br>
+	<br>
+	Your character in Lost Ark is controlled mainly with your mouse for both moving and attacking. But you have to choose between two mouse controls&mdash;whether to attack with your left click and move with your right or reverse it, moving with your left click and attacking with your right. Either works just fine, but you can change depending on your experience with other games. Here&#39;s <strong>how to change your mouse controls in Lost Ark</strong>:<br>
+	</span></p>
+<p>
+	<span style="font-family:times new roman, times, serif;"><br>
+	</span></p>
+<p>
+	<span style="font-family:times new roman, times, serif;"><img src='static/picture/0a7d3aabc87c5bb90bf1ae439090e4f9.JPG' alt='How to Change Your Mouse Controls in Lost Ark?'><br>
+	<br>
+	<strong>How do you change the controls in Lost Ark?</strong><br>
+	<br>
+	Changing your mouse controls is very simple:<br>
+	<br>
+	1). To change mouse controls, press Esc when playing the game.<br>
+	<br>
+	2). Click on Settings (bottom right corner).<br>
+	<br>
+	3). Then, when in the settings menu, click on Hotkeys in the left menu to make more options appear underneath, click on Basic Controls.<br>
+	<br>
+	4). Once clicked, you&#39;ll have a menu of controls on the right side. The option you need to tick/untick is Attack with Right-click. If Attack with Right-click is unticked, you attack with the Left-click and move with your Right-click. If ticked, it means you attack with Right-click and move with Left-click.<br>
+	<br>
+	5). Tick or untick this option and then press Apply and Confirm. Once done, go back to the game and test out the new mouse control. If you prefer it, no more changes need to be made. If not, repeat the steps above.<br>
+	<br>
+	You can also adjust your keyboard layout in the settings:<br>
+	<br>
+	&nbsp;&nbsp;&nbsp; &bull; Open the menu with Esc.<br>
+	&nbsp;&nbsp;&nbsp; &bull; Click Settings at the bottom.<br>
+	&nbsp;&nbsp;&nbsp; &bull; Select the control and display under the menu item &quot;Game Experience.&quot;<br>
+	&nbsp;&nbsp;&nbsp; &bull; There you will find a dropdown menu for rearranging the keyboard layout.<br>
+	&nbsp;&nbsp;&nbsp; &bull; Then press Save, and you can enjoy your new layout. <br>
+	<br>
+	<strong>Which settings can still be made?</strong><br>
+	<br>
+	In principle, you can reassign many keys, including:<br>
+	<br>
+	&nbsp;&nbsp;&nbsp; &bull; Attack with the keyboard<br>
+	&nbsp;&nbsp;&nbsp; &bull; Automatic moving<br>
+	&nbsp;&nbsp;&nbsp; &bull; The different skills<br>
+	&nbsp;&nbsp;&nbsp; &bull; The hotkeys for using items<br>
+	&nbsp;&nbsp;&nbsp; &bull; The basic menu guidance<br>
+	<br>
+	However, options such as hiding the UI (always &quot;ALT + X&quot;), displaying the booty names (always &quot;ALT&quot;), and interacting via the keyboard (always &quot;G&quot; and &quot;H&quot;) cannot be changed.<br>
+	<br>
+	<strong>How do you fight in Lost Ark anyway?</strong><br>
+	<br>
+	You move through the game world with mouse clicks (either right or left). With the other mouse button, you carry out a simple attack. However, this attack can also be carried out using the keyboard (the &quot;C&quot; key by default).<br>
+	<br>
+	Already in the tutorial, you get a handful of skills that you can use with the keys &quot;Q, W, E, R, A, S&quot; or another assignment of your choice. Potions and items are, on the other hand, potions and items are on the keys &quot;F1&quot; and the numbers 1-9.<br>
+	<br>
+	Try out some of the different key/button options to see what suits you best. Also, got any tips to change your Lost Ark mouse and keyboard settings? Let us know in the comments below.<br>
+	</span></p>
+        </div>
+        <div class="shart_b">
+            <!-- AddToAny BEGIN -->
+            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                <a class="a2a_dd" href="javascript:;"></a>
+                <a class="a2a_button_facebook"></a>
+                <a class="a2a_button_twitter"></a>
+                <a class="a2a_button_google_plus"></a>
+                <a class="a2a_button_pinterest"></a>
+            </div>
+            <script async="" src="static/js/page.js"></script>
+            <!-- AddToAny END -->
+        </div>
+        <div class="clear"></div>
+    </div>
+</section>
+<!--<section class="page-body-have">
+    <div class="page_title">
+        <span></span>
+    </div>
+    <div class="container">
+        <div class="card-container">
+            <div id="disqus_thread" style="width: 100%;"></div>
+            <script>
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://u4gm.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+</section>-->
+<section class="page-body-have">
+    <div class="page_title">
+        <span>lost ark change mouse controls Related News And Guides </span>
+    </div>
+    <div class="card-container">
+            </div>
+</section>            <section id="top_go" class="top_class">
+                <a href="#pageTop" id="goPageTop"></a>
+            </section>
+        </section>
+        <div class="clear"></div>
+    </section>
+</section>
+        <footer>
+            <div class="container">
+                <div class="card-container">
+                    <div class="left_safe card_fix">
+                        <ul class="left_safe_img">
+                            <li>
+                                <a href="javascript:;" title="Google Transparency Report lostark.gold" rel="nofollow">
+                                    <img src="static/picture/google_sale.png" alt="Google Transparency Report lostark.gold">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" title="McAfee SECURE certification lostark.gold" rel="nofollow">
+                                    <img src="static/picture/mcafee_safe.png" alt="McAfee SECURE certification lostark.gold">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footerList">
+                                                            <li>
+                                    <a href="privacy-policy.html" title="Privacy Policy">
+                                        Privacy Policy                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="terms-and-conditions.html" title="Terms and Conditions">
+                                        Terms and Conditions                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="warranty-return.html" title="Warranty & Return">
+                                        Warranty & Return                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="contact-us.html" title="Contact Us">
+                                        Contact Us                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="about-us.html" title="About Us">
+                                        About Us                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                    <div class="center_pay card_fix">
+                        <div class="pay_div"><img src="static/picture/pay_buttom_ark.png" alt="futcoins pay method"></div>
+                    </div>
+                    <div class="right_sns card_fix">
+                        <div class="hdLinks">
+                            <a href="#" target="_blank">
+                                <img src="static/picture/facebook.png" alt="facebook">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/google.png" alt="google">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img src="static/picture/youtube.png" alt="youtube">
+                            </a>
+                        </div>
+                        <div class="poe2trade_txt">
+                            LostArkGold is the Best way to buy First-Hand Lost Ark gold and items. We offer instant delivery, 24/7 customer service, trustworthy sellers, and 100% Trading Protection.                         </div>
+                    </div>
+                </div>
+                <div class="footer_links_div">
+                    <div class="container">
+                        <ul class="footerList">
+                                                            <li>
+                                    <a href="index.html" rel="" title="Lost Ark Gold" target="">
+                                        Lost Ark Gold                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="index.html" rel="" title="Buy Lost Ark Gold" target="">
+                                        Buy Lost Ark Gold                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="javascript:;" rel="" title="Lost Ark Website" target="">
+                                        Lost Ark Website                                    </a>
+                                </li>
+                                                            <li>
+                                    <a href="javascript:;" rel="nofollow" title="Lost Ark Steam" target="">
+                                        Lost Ark Steam                                    </a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Possible account termination when using illegal leveling or illegally obtained gold.<br>
+                Copyright © 2009-2022                                <a href="index.html" title="lostark.gold" rel="nofollow">King COOLPLAY TECHNOLOGY CO., LIMITED)</a>.All rights reserved.
+                <a href="javascript:;" title="Sitemap">Sitemap</a>
+            </div>
+        </footer>
+        <section id="top_go" class="top_class">
+
+            <a href="#pageTop" id="goPageTop" title="go page top" rel="nofollow">
+                <img src="static/picture/go-top-page.svg" alt="go page 
+                     top">
+            </a>
+        </section>
+    </body>
+            <script type="text/javascript" src="static/js/jquery_min.js"></script>
+            <script type="text/javascript" src="static/js/img_lazyload.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.bt.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.mobile.menu.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+    <div style="display:none">
+                    </div>
+</html>
